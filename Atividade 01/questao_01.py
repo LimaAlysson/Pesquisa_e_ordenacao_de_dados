@@ -34,7 +34,7 @@ def insertion_sort(lista):
         j = i - 1
         while j > -1 and lista[j] > chave:
             lista[j+1] = lista[j]
-            lista -= 1
+            j -= 1
         lista[j+1] = chave
 
     return lista
