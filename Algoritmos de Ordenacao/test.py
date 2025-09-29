@@ -1,5 +1,5 @@
 import random
-import selection_sort, bubble_sort, insertion_sort, merge_sort
+import selection_sort, bubble_sort, insertion_sort, merge_sort, quick_sort
 
 any_numbers = random.sample(range(1, 1000), 42)
 
@@ -13,7 +13,19 @@ repeated = [7, 7, 7, 7, 7, 1, 1, 9, 9, 0, 4, 4, 4, 5, 4, 4, 7, 1]
 
 
 if __name__ == "__main__":
-    print(repeated)
-    print("***ORDENADO***")
-    print(merge_sort.merge_sort(repeated))
+    sort = quick_sort
+    test_cases = {
+        'Números aleatórios': any_numbers,
+        'Já ordenados': already_sorted,
+        'Ordem inversa': inversed,
+        'Elementos repetidos': repeated
+    }
+    print("*********************************")
+    print(f'***{sort.__name__}***')
+    for nome, lista in test_cases.items():
+        print(f'\nCaso de teste: {nome}')
+        print(lista)
+        sort.quick_sort(lista)
+        print("\n Ordenado:")
+        print(lista)
 
