@@ -1,3 +1,5 @@
+# Complexidade O(nlogn) em médio e melhor caso
+# Complexidade O(n²) em pior caso
 
 def quick_sort(lista, inicio=0, fim=None):
     if fim is None:

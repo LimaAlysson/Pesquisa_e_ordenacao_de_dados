@@ -1,3 +1,5 @@
+# Complexidade O(nlogn) em todos os casos
+
 
 def merge_sort(lista, inicio=0, fim=None):
     if fim is None:

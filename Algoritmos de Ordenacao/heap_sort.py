@@ -1,5 +1,6 @@
 # Aŕvore binária: Os filhos sõa menores que o pai; a árvore é a mais completa possível (completa sempre horizontalmente antes)
 # pode ser representada por um vetor
+# Complexidade O(nlogn) em todos os casos
 
 def parent(i):
     return (i -1) // 2
