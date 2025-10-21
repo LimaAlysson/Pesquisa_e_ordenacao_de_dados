@@ -32,6 +32,5 @@ def counting_sort(lista):
 if __name__ == '__main__':
     lista = random.sample(range(1,100), 10)
     print(lista)
-    #teste = counting_sort(lista)
     teste = counting_sort(lista)
     print(teste)
