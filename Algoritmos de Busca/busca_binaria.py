@@ -1,9 +1,11 @@
+
 from random import sample
+# Complexidade = O(logn)
 
 def busca_binaria(lista, x, inicio=0, fim=None):
     if fim is None:
         fim = len(lista) - 1
-    
+
     if inicio <= fim:
         meio = (inicio + fim) // 2
         if lista[meio] == x:
@@ -15,8 +17,7 @@ def busca_binaria(lista, x, inicio=0, fim=None):
     return -1
 
 
-lista = sample(range(1, 11), 10)
-lista = sorted(lista)
+lista = [1,1,2,3,4,5,6,7,8,9,10]
 
 busca = busca_binaria(lista, 1)
 print(busca)
