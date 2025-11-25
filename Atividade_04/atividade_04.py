@@ -1,3 +1,7 @@
+# Equipe:
+# Alysson José
+# André Igor
+# Leonardo Lucena
 
 def busca_binaria(lista, x, inicio=0, fim=None):
     if fim is None:
